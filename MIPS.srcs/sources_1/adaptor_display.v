@@ -1,33 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 		Northeastern University
-// Engineer: 		J. Kimani
-// 
-// Create Date: 	09/30/2020 06:09:18 PM
-// Design Name: 	7 Segment BCD Display
-// Module Name: 	Adaptor_display
-// Project Name: 
-// Target Devices: 	TUL PYNQ Z2 With Adaptor Board 
-// Tool Versions: 	Xilinx Vivado 2018.3
-// Description: 	Displays BCD digits on the 7-Segment Displays
-// 
-// Dependencies: 	All modules included in this file
-// 
-// Revision:		Version 1.0
-// Additional Comments:	Included XDC file can be used
-// 
-//////////////////////////////////////////////////////////////////////////////////
-/*
-	// Usage - Replace opx with actual signals in top module
-	Adaptor_display display(.clk(op0), 				// system clock
-							.input_value(op1),		// 8-bit input [7:0] value to display
-							.disp_en(op2),			// output [3:0] 7 segment display enable
-							.seg7_output(op3));		// output [6:0] 7 segment signals
-*/
 
-/*
-*	Top module for the adaptor displays. Instantiate this module as shown above in your design
-*/
 module Adaptor_display(input clk, input[7:0] input_value, output[3:0] disp_en, output [6:0]seg7_output);
 	
 	wire refresh_clock;							// 10KHz refresh clock for displays

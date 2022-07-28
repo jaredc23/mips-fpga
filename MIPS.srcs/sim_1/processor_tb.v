@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/07/2022 09:14:48 PM
+// Create Date:
 // Design Name: 
-// Module Name: lab7_tb
+// Module Name: processor_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -57,8 +57,6 @@ module processor_tb();
 	wire [8:0] Data_Mem_Out;
 	wire [7:0] zero_register;
 	
-	// PC and debouce clock
-	
 	
 	reg rst_general = 0;
 	
@@ -72,7 +70,7 @@ program_counter PC(
  	.imm(immediate),
  	.pc(pc)
 );  
-	//Instantiate Your instruction Memory here
+
 instr_mem MEM (
   .a(pc),      // input wire [7 : 0] a
   .spo(instruction)  // output wire [15 : 0] spo
@@ -137,7 +135,7 @@ eightbit_alu ALU(
 	.take_branch(take_branch)
 );	
 	
-    /* Instantiate the data memory that you have created here*/	
+
 data_memory mem (
   .a(alu_output),      // input wire [7 : 0] a
   .d(regfile_ReadData2),      // input wire [8 : 0] d

@@ -32,30 +32,3 @@ always @ (posedge clk or posedge rst)begin
 end
 
 endmodule
-
-
-
-
-//initial begin
-//	for(i = 0; i < WIDTH; i = i + 1) begin
-//		regfile[i] <= 0;
-//	end
-//end
-
-//always @(posedge clk) begin
-//	rd0_data <= regfile[rd0_addr];
-//	rd1_data <= regfile[rd1_addr];
-//end
-
-//always @(clk, wr_data, wr_addr) begin
-//	if(wr_en) begin
-//		regfile[wr_addr] <= wr_data;
-//	end
-//end
-
-//always @(posedge rst) begin
-//	for(i = 0; i < WIDTH; i = i + 1) begin
-//		regfile[i] <= 0;
-//	end
-//end
-	

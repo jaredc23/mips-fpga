@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: Jared Cohen (cohen.jar@northeastern.edu)
+// Engineer: Jared Cohen (jaredscohen11@gmail.com)
 // 
 // Create Date: 
 // Design Name: 
