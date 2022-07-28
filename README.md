@@ -2,11 +2,11 @@
 This is a MIPS processor created for the purpose of learning how to create processors from the RTL level up to assembly. 
 
 Features:
-- Assembly compiler
-- 4 general use register
 - 8-bit Arithmetic Logic Unit
 - 2kb RAM
 - 4kb Instruction Memory
+- 4 general use registers
+- Assembly compiler
 
 # How to use
 This was designed for the Xilinx Zynq C7z020 SoC, and inside the repository is a Vivado project that can be used to generate the bitstream needed for the FPGA.
